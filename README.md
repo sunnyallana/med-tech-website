@@ -1,1 +1,0 @@
-# med-tech-website
