@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 const ImageAccordian = (props) => {
+    const { text, image } = props;
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -38,7 +39,7 @@ const ImageAccordian = (props) => {
                     width: '125%',
                     height: '100%',
                     transition: 'left 2s ease',
-                    background: `url(${process.env.PUBLIC_URL}/joinUsImage.jpg)`,
+                    background: `url(${image})`,
                     backgroundSize: 'cover',
                     transform: isHovered ? 'translateX(0)' : 'translateX(0)',
                 }}
@@ -67,7 +68,7 @@ const ImageAccordian = (props) => {
                     fontSize: '1.2rem',
                 }}
             >
-                {props.text}
+                {text}
             </div>
 
             <div
