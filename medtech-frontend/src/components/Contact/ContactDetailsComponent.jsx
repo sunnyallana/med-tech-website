@@ -1,10 +1,9 @@
 import { IconButton } from '@mui/material';
-import { Email, Phone, LocationOn } from '@mui/icons-material';
+import { Email, Phone, LocationOn, Fax } from '@mui/icons-material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { Fax } from '@mui/icons-material';
 import styles from './Contact.module.css';
 
 

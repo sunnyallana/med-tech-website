@@ -6,7 +6,7 @@ import JoinUsComponent from "./Contact/JoinUsComponent";
 const ContactComponent = () => {
     return (
         <div>
-            <ContactCoverImageComponent image="CoverImage.jpg"/>
+            <ContactCoverImageComponent image="ContactCoverImage.jpg"/>
             <ContactDetailsComponent />
             <MapComponent/>
             <JoinUsComponent/>

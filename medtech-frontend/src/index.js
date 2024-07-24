@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HealthCareComponent from './components/HealthCareComponent';
-// import ContactComponent from './components/ContactComponent';
+import ProjectsComponent from './components/ProjectsComponent';
+import ContactComponent from './components/ContactComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <ContactComponent /> */}
+    <ContactComponent />
      <HealthCareComponent />
+     <ProjectsComponent />
   </React.StrictMode>
 );
 
