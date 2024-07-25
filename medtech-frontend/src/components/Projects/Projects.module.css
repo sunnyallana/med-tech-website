@@ -23,11 +23,6 @@
     color: white;
 }
 
-.parentBox:hover {
-  background-color: #b3203a;
-  color: white;
-}
-
 .parentBoxActive {
   background-color: #b3203a !important;
   color: white !important;

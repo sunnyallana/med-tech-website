@@ -1,10 +1,10 @@
-import ProjectsCoverImageComponent from "./Projects/ProjectsCoverImageComponent";
 import ProjectsMainComponent from "./Projects/ProjectsMainComponent";
+import CoverImageComponent from "./CoverImageComponent";
 
 const ProjectsComponent = () => {
     return (
         <div>
-            <ProjectsCoverImageComponent image="ProjectsCoverImage.jpg" />
+            <CoverImageComponent image="ProjectsCoverImage.jpg" title="Projects" />
             <ProjectsMainComponent/>
         </div>
     )
