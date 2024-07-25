@@ -1,10 +1,9 @@
 import React from 'react';
-import HealthCareCoverImageComponent from "./HealthCareServices/HealthCareCoverImageComponent";
 import ImageAccordian from "./HealthCareServices/ImageAccordian";
 import styles from './HealthCareServices/HealthCare.module.css';
+import CoverImageComponent from './CoverImageComponent';
 
 const HealthCareComponent = () => {
-  // Array of texts for ImageAccordian components
   const accordionTexts = [
     'Cardiology',
     'Dermatology',
@@ -18,12 +17,11 @@ const HealthCareComponent = () => {
     'Urology',
     'Endocrinology',
     'ENT (Ear, Nose, Throat)',
-    // Add more texts as needed
   ];
 
   return (
     <div>
-      <HealthCareCoverImageComponent image="HealthCareCoverImage.jpg" />
+      <CoverImageComponent image="HealthCareCoverImage.jpg" title="Our Services" />
       
       <div style={{margin: '3% 0 3% 0'}} className="text-center">
         <h1 className={styles.gradientText}>Our Solutions are</h1>

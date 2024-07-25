@@ -1,4 +1,6 @@
-const ContactCoverImageComponent = ({ image }) => {
+import React from 'react';
+
+const CoverImageComponent = ({ image, title }) => {
     const backgroundImage = {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${process.env.PUBLIC_URL}/${image})`,
         backgroundSize: 'cover',
@@ -15,14 +17,13 @@ const ContactCoverImageComponent = ({ image }) => {
         position: 'relative',
     };
 
-
     return (
         <div style={backgroundImage}>
             <div>
-                <h1>Contact Us</h1>
+                <h1>{title}</h1>
             </div>
         </div>
     );
 }
 
-export default ContactCoverImageComponent;
+export default CoverImageComponent;
