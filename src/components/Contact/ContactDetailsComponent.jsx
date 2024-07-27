@@ -5,14 +5,17 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import styles from './Contact.module.css';
-
+import { motion } from 'framer-motion';
 
 const ContactDetailsComponent = () => {
     return (
         <div style={{margin: '5% 0% 5% 0%', padding: '0% 3% 0% 3%'}} className="container-fluid">
-            <div className="row">
-                <div className="col-md-4">
-
+            <motion.div 
+                initial={{ scale:0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 1 }}                
+                className="row"> 
+                <div className="col-md-4 mx-auto text-center text-md-start"> {/* Center content for small screens */}
                     <h1 style={{marginBottom: '5%'}} className={styles.gradientText}>Contact Details</h1>
                     <p>
                         <LocationOn style={{ color: 'white', background: 'linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%)' }} /> MedTech Corporation
@@ -47,7 +50,6 @@ const ContactDetailsComponent = () => {
                             <IconButton style={{ color: 'white', background: 'linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%)', marginRight: '2%' }}>
                                 <LinkedInIcon />
                             </IconButton>
-                            
                         </a>
                         <a  href="https://www.youtube.com">
                             <IconButton style={{ color: 'white', background: 'linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%)', marginRight: '2%'}}>
@@ -61,7 +63,7 @@ const ContactDetailsComponent = () => {
                         </a>
                     </div>
                 </div>
-                <div  className="col-md-8">
+                <div className="col-md-8">
                     <div style={{ boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.1)', padding: '5%', borderRadius: '10px'}}>
                         <form>
                             <h3 style={{marginBottom:'5%'}} className={styles.gradientText}>Send Enquiry</h3>
@@ -85,7 +87,7 @@ const ContactDetailsComponent = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

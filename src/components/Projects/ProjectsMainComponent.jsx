@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.css';
+import { motion } from "framer-motion"
+
 
 const ProjectsMainComponent = () => {
     const [categories, setCategories] = useState({
@@ -87,7 +89,11 @@ const ProjectsMainComponent = () => {
                     </ul>
                 </div>
                 <div className="col-md-6 d-flex justify-content-center align-items-center">
-                    <img style={{
+                    <motion.img 
+                     initial={{ y: 80 }}
+                     whileInView={{ y: 0 }}
+                     transition={{ duration: 0.7 }}                 
+                    style={{
                         maxWidth: '100%',
                         height: 'auto',
                         maxHeight: '120vh',
@@ -98,15 +104,22 @@ const ProjectsMainComponent = () => {
             <div style={{ padding: '2% 5% 5% 5%', textAlign: 'center' }} className="container-fluid">
                 <h1 className={styles.gradientText}>End to End Solutions</h1>
             </div>
+
             <div style={{ margin: '0 10% 0 10%', textAlign: 'center' }} className='row'>
+                
                 {Object.keys(categories).map(category => (
                     <div key={category} className="col-md-4">
-                        <div
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{
+                              scale: 0.8,
+                              borderRadius: "50%"
+                            }}
                             className={`${styles.parentBox} ${categories[category].showDetails ? styles.parentBoxActive : ''}`}
                             onClick={() => toggleDetails(category)}
                         >
                             {categories[category].name}
-                        </div>
+                        </motion.div>
                         {categories[category].showDetails && (
                             <div className="d-flex flex-wrap justify-content-center">
                                 {categories[category].details.map((item, index) => (
