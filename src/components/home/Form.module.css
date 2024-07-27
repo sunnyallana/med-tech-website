@@ -1,0 +1,25 @@
+.form{
+    padding: 3rem;
+    border: 1px solid gray;
+}
+.form input ,.form select ,.form textarea{
+    border:none;
+    border-bottom: 0.0084px solid gray;
+    padding-bottom: 3px;
+}
+#controlsForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bgColor{
+    background: -webkit-linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%);
+  }
+  #header{
+     
+        background: -webkit-linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%); /* background color on hover */
+          color: white; /* text color on hover */
+      
+  }
+ 
