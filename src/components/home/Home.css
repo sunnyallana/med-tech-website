@@ -1,6 +1,6 @@
 .carousel-caption {
     position: absolute;
-    top: 56%;
+    top: 50%;
     left: 54%;
     transform: translate(-50%, -50%);
     text-align: left;
