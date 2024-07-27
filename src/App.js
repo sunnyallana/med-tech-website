@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import Event from './components/Event/Event';
 import Projects from './components/ProjectsComponent';
 import Contact from './components/ContactComponent';
+import { UserProvider } from './components/context/UserContext';
 import {
   BrowserRouter,
   Route,
@@ -15,14 +16,12 @@ import HealthCareSolutions from './components/HealthCareComponent';
 import ChatNow from './components/home/ChatNow';
 function App() {
   return (
-    
+    <UserProvider>
     <BrowserRouter>
    
   
     <Navbar/>
-
-  
-    <Routes>
+ <Routes>
     <Route path="/" element={<Home />}></Route>
     <Route path="/story" element={<OurStory />}></Route>
     <Route path="/healthcaresolutions" element={<HealthCareSolutions />}></Route>
@@ -34,6 +33,7 @@ function App() {
     </Routes>
     <Footer/>
     </BrowserRouter>
+    </UserProvider>
 
   );
 }

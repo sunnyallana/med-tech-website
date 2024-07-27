@@ -4,10 +4,22 @@ import Form from './Form';
 import contact from '../../images/contact.jpg';
 import css from './Form.module.css';
 import { IoIosChatbubbles } from "react-icons/io";
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useUser } from '../context/UserContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function InTouch() {
+  const { user } = useUser();
+  const navigate = useNavigate();
+
+  const handleChatClick = () => {
+    if (!user) {
+      alert('Please register first!');
+      return;
+    }
+    navigate('/chatnow'); 
+    // Proceed to chat functionality
+  };
   return (
     <>
     <h2 className='text-center gradientText'>Get in Touch</h2>
@@ -26,7 +38,7 @@ export default function InTouch() {
                 whileInView={{scale:1}}
               
                 transition={{ duration: 1, iteration: Infinity }} className='text-center'>
-                <Link to='/chatnow' type="submit" className={`btn btn-primary btn-lg rounded-pill w-50 my-3 ${css.bgColor}`}>Chat Now <IoIosChatbubbles /></Link></motion.div>
+                <button  onClick={handleChatClick} type="submit" className={`btn btn-primary btn-lg rounded-pill w-50 my-3 ${css.bgColor}`}>Chat Now <IoIosChatbubbles /></button></motion.div>
     
             </div>
         </div>
