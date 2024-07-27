@@ -21,8 +21,8 @@ export default function Form() {
 
   return (
     <>
-      <div className="card-body" id={css.header}>
-        <h5 className="card-text text-center py-3 ">Register For Chat Now</h5>
+      <div className={`card-body ${css.header}`}>
+        <h5 className="card-text text-center py-3">Register For Chat Now</h5>
       </div>
       <form className={css.form}>
         <div className="mb-3">
@@ -35,14 +35,14 @@ export default function Form() {
             onChange={(e) => setFullName(e.target.value)}
           />
         </div>
-        <div className="mb-3" id={css.controlsForm}>
+        <div className={`mb-3 ${css.controlsForm}`}>
           <div>
             <input
               type="email"
               className="form-control"
               placeholder="Your Email"
               value={email}
-        onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div>
@@ -53,10 +53,13 @@ export default function Form() {
             />
           </div>
         </div>
-        <select className="form-select" aria-label="Default select example"
-        value={enquiry}
-        onChange={(e) => setEnquiry(e.target.value)}>
-          <option selected>Select Enquiry</option>
+        <select 
+          className="form-select"
+          aria-label="Default select example"
+          value={enquiry}
+          onChange={(e) => setEnquiry(e.target.value)}
+        >
+          <option value="">Select Enquiry</option>
           <option value="Sales">Sales</option>
           <option value="Projects">Projects</option>
           <option value="Career">Career</option>

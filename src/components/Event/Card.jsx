@@ -13,8 +13,8 @@ export default function Card({item}) {
      <motion.div
      initial={{ y:80 }}
      whileInView={{y:0}}
-     transition={{ duration: 1}} class="row">
-     <div class="col-sm-6 mb-3 mb-sm-0 h-100">
+     transition={{ duration: 1}} className="row">
+     <div className="col-sm-6 mb-3 mb-sm-0 h-100">
       <div className="card h-100" style={{width: "20rem", marginTop:"3rem"}}>
   <img src={item.urlToImage? item.urlToImage:"No image Available"}className="card-img-top" alt="news"/>
   <div className="card-body">

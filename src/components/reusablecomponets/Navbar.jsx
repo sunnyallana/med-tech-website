@@ -98,7 +98,7 @@ export default function Navbar() {
               </IconButton>
             </MenuItem>
             <MenuItem onClick={closeMenu} component={Link} to="/story">Our Story</MenuItem>
-            <MenuItem onClick={closeMenu} component={Link} to="/healthcaresoltions">HealthCare Solutions</MenuItem>
+            <MenuItem onClick={closeMenu} component={Link} to="/healthcaresolutions">HealthCare Solutions</MenuItem>
             <MenuItem onClick={closeMenu} component={Link} to="/projects">Projects</MenuItem>
             <MenuItem onClick={closeMenu} component={Link} to="/events">Events</MenuItem>
             <MenuItem onClick={closeMenu} component={Link} to="/contact">Contact</MenuItem>

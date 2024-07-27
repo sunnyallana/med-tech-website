@@ -15,7 +15,7 @@ const ContactDetailsComponent = () => {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 1 }}                
                 className="row"> 
-                <div className="col-md-4 mx-auto text-center text-md-start"> {/* Center content for small screens */}
+                <div className="col-md-4">
                     <h1 style={{marginBottom: '5%'}} className={styles.gradientText}>Contact Details</h1>
                     <p>
                         <LocationOn style={{ color: 'white', background: 'linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%)' }} /> MedTech Corporation
