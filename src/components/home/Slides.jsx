@@ -19,7 +19,7 @@ export default function Slides({item}) {
              
               <div className="carousel-caption  d-md-block container">
                 <div
-                 className="text-left w-50">
+                 className="text-left w-75">
                   <h1 className="display-3 lh-2" style={{ letterSpacing: "0", fontFamily: "Times New Roman" }}>
                     {item.heading}
                   </h1>

@@ -38,7 +38,7 @@ export default function ImageSlider() {
 
   return (
     <>
-      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{ marginTop: "-6rem", padding: "0", boxSizing: "border-box" }}>
+      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{ padding: "0", boxSizing: "border-box" }}>
         <div
        
       
