@@ -1,0 +1,37 @@
+.gradientText {
+    background: -webkit-linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bgColor{
+    background: -webkit-linear-gradient(90deg, rgba(106,44,112,1) 13%, rgba(184,33,51,1) 91%);
+  }
+.about-us{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-mission{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+.mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+  @media screen and (max-width: 768px) {
+    .about-us{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  
