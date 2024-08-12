@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## ![imageOne](imageOne.jpg)  <!-- Image located in the root of the repository -->
+## ![imageOne](imageOne.png)  <!-- Image located in the root of the repository -->
+
+Check out the live app here: [medtech-seven.vercel.app](https://medtech-seven.vercel.app/)
 
 ## Available Scripts
 
