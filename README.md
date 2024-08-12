@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## ![imageOne](imageOne.png)  <!-- Image located in the root of the repository -->
+## ![imageOne](imageOne.jpg)  <!-- Image located in the root of the repository -->
 
 ## Available Scripts
 
